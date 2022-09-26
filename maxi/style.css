@@ -24,6 +24,12 @@ nav li {
     width: 100%;
 }
 
+.logo img {
+    width: 50%;
+    height: auto;
+    padding: 5% 0px;
+}
+
 .main {
     background-image: url(../maxi/images/computers.jfif);
     background-repeat: no-repeat;
