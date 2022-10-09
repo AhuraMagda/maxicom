@@ -3,6 +3,30 @@
     font-family: helvetica, sans-serif;
 }
 
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13vw;
+    font-weight: bold;
+    width: 100%;
+}
+
+.logo p {
+    margin: 15px 0px 5px;
+}
+
+@media screen and (min-width: 1280px) {
+    .logo {
+        font-size: 9vw;
+        margin: 10px 0px;
+    }
+}
+
+/* Navigation Bar */
+
 nav ul {
     display: flex;
     justify-content: flex-start;
@@ -16,19 +40,7 @@ nav li {
     list-style: none;
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.logo {
-    display: flex;
-    font-size: 6vw;
-}
-
-
+/*  Main picture */
 .main {
     background-image: url(../maxi/images/computers.jfif);
     background-repeat: no-repeat;
@@ -39,7 +51,7 @@ nav li {
     margin-bottom: 40px;
 
 }
-
+ /* Box on picture */
 .main-box {
     background-color: white;
     opacity: 0.8;
@@ -53,12 +65,14 @@ nav li {
 }
 
 .container {
-padding: 40px 0px;
+    padding: 40px 0px;
 }
 
 .main-box h2 {
     margin: 0px;
 }
+
+/* Oferta */
 
 .oferta-box {
     display: flex;
@@ -83,6 +97,7 @@ padding: 40px 0px;
     }
 }
 
+
 figure img {
     height: 150px;
     width: 150px;
@@ -92,18 +107,19 @@ figcaption {
     text-align: center;
     padding-top: 20px;
     color: rgb(218, 32, 32);
-    font-size: 24px;
+    font-size: 1.4rem;
 }
 
 h3 {
     text-align: center;
-    font-size: 32px;
+    font-size: 1.9rem;
 }
 
 p {
     text-align: center;
 }
 
+/* Contact box */
 
 .contact-box {
     display: flex;
@@ -112,7 +128,7 @@ p {
 }
 
 .content-box {
-    font-size: 20px;
+    font-size: 1.1rem;
     background-color: rgb(41, 77, 238);
     color: white;
     text-align: center;
@@ -121,8 +137,21 @@ p {
     border-radius: 15px;
 }
 
+@media screen and (max-width: 600px) {
+    .contact-box {
+        flex-wrap: wrap;
+    }
+    .content-box {
+        width: 90%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Footer */
+
 footer p {
-    font-size: 13px;
+    font-size: 0.8rem;
     text-align: right;
     color: gray;
     padding-right: 20px;
